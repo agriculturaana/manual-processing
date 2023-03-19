@@ -1,0 +1,123 @@
+site_name: Manunal de Execução dos Scripts
+docs_dir: docs
+site_author: Hugo do Nascimento Bendini, Caio Augusto Bertolini, Ravi Fernandes Mariano e Renato Gomes Silvério
+site_description: >-
+  Manual de execução dos scripts de processamento de dados, manipulação de GRIDS e execução de algoritmos de Machine Learning
+
+
+# Copyright
+copyright: Copyright &copy; 2023 ANA - Agência Nacional de Águas e Saneamento Básico e INPE - Instituto Nacional de Pesquisas Espaciais
+
+# Configuration
+theme:
+  name: material
+  custom_dir: docs/overrides
+  logo: imgs/logos/logo-ana-branco.png
+
+  # Static files
+  static_templates:
+    - 404.html
+
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+
+  # Default values, taken from mkdocs_theme.yml
+  language: pt
+  features:
+    - content.code.annotate
+    - navigation.indexes
+    - navigation.sections
+    - navigation.tabs
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+  palette:
+    - scheme: default
+      primary: blue
+      accent: blue grey
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - scheme: slate
+      primary: red
+      accent: red
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+  font:
+    text: Lato
+    code: Lato Helvetica
+  favicon: imgs/logos/favicon.ico
+  icon:
+    logo: logo
+
+# Plugins
+plugins:
+  - search
+  - minify:
+      minify_html: true
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+nav:
+  - 'HOME': 'index.md'
+  - 'Arquitetura': 'arquitetura/diagrama.md'
+
+  - 'Requisitos':
+    - 'Pré-requisitos' : 'pre-requisitos/requisitos.md'
+    - 'Links para download dos Pré-requisitos' : 'pre-requisitos/links-download.md'
+
+  - 'Instalações':
+    - 'Instalação do PuTTY' : 'instalacao/filezilla.md'
+    - 'Instalação do FileZilla' : 'instalacao/putty.md'
+    - 'Instalação do Moba Xterm' : 'instalacao/mobaxterm.md'
+
+  - 'Configurações':
+    - 'Configuração do PuTTY' : 'configuracao/putty.md'
+    - 'Configuração do FileZilla' : 'configuracao/filezilla.md'
+    - 'Configuração do Moba Xterm' : 'configuracao/mobaxterm.md'
+
+  - 'Execução': 'execucao/executacao-scripts.md'
