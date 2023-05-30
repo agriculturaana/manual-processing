@@ -1,1 +1,1 @@
-<img src="https://drive.google.com/file/d/1L3psMHldbQwn8T5WtRU6XG7E_XVPOjS0/view?usp=sharing"  width="300%" height="300%">
+<img src="https://lh3.googleusercontent.com/u/3/drive-viewer/AFGJ81rdibSxwL5DEm2bmHlvLSsWEi_kznNzio9i7Kayvi61MX5OrtL5zIGPgGwMloLehRHuo44UDtLcD9ZtrfjgeCIsC0I_Mw=w543-h974"  width="300%" height="300%">
