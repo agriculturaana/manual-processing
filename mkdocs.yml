@@ -104,7 +104,6 @@ markdown_extensions:
 nav:
   - 'HOME': 'index.md'
   - 'Arquitetura': 'arquitetura/diagrama.md'
-  - 'Fluxograma - Scripts AWS': 'fluxograma/fluxograma.md'
   - 'Requisitos':
     - 'Pré-requisitos' : 'pre-requisitos/requisitos.md'
     - 'Links para download dos Pré-requisitos' : 'pre-requisitos/links-download.md'
@@ -118,5 +117,7 @@ nav:
     - 'Configuração do PuTTY' : 'configuracao/putty.md'
     - 'Configuração do FileZilla' : 'configuracao/filezilla.md'
     - 'Configuração do Moba Xterm' : 'configuracao/mobaxterm.md'
+  
+  - 'Fluxograma - Scripts AWS': 'fluxograma/fluxograma.md'
 
   - 'Execução': 'execucao/executacao-scripts.md'
